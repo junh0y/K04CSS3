@@ -4,16 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator.html</title>
+    <style>
+        * {
+            font-family: 맑은고딕;
+            font-size: 26px;
+            font-weight: bold;
+        }
+        div {
+            text-align: center;
+            width: 500px;
+            height: 453px;
+            border: 2px solid #DBDBDB;
+            background-color: #DDDDDD;
+            border-radius: 10px;
+        }
+        .box0 {
+            width: 492px;
+            height: 100px;
+            color: #373737;
+            background-color: #70C738;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 5px;
+            font-size: 48px;
+            text-align: right;
+            padding-right: 20px;
+        }
+        .box1 {
+            width: 242px;
+            height: 60px;
+            color: #F9F9FA;
+            background-color: #7B7B7B;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 5px;
+        }
+        .box2 {
+            width: 117px;
+            height: 60px;
+            color: #F9F9FA;
+            background-color: #373737;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 5px;
+        }
+        .box3 {
+            width: 117px;
+            height: 60px;
+            color: #F9F9FA;
+            background-color: #FA960A;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 5px;
+        }
+    </style>
 </head>
-<body>
-    TABLE 태그
-    디스플레이 (DIV 태그 사용 : HTML 연결)
-    버튼 (INPUT, BUTTON)
-
-    정리
-    · 레이아웃 : Table 태그
-    · 버튼 : Input 또는 Button 태그
-    · LCD : Div 태그
+<body>  
+    <div>
+        <table>
+        <form action="">
+            <tr>
+                <td colspan="4"><input class="box0" type="button" id="display" value="123+456"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input class="box1" type="button" id="backspace" value="BackSpace"></td>
+                <td colspan="2"><input class="box1" type="button" id="delete" value="C"></td>
+            </tr>
+            <tr>
+                <td><input class="box2" type="button" id="one" value="1"></td>
+                <td><input class="box2" type="button" id="two" value="2"></td>
+                <td><input class="box2" type="button" id="three" value="3"></td>
+                <td><input class="box3" type="button" id="divide" value="/"></td>
+            </tr>
+            <tr>
+                <td><input class="box2" type="button" id="four" value="4"></td>
+                <td><input class="box2" type="button" id="five" value="5"></td>
+                <td><input class="box2" type="button" id="six" value="6"></td>
+                <td><input class="box3" type="button" id="multifly" value="*"></td>
+            </tr>
+            <tr>
+                <td><input class="box2" type="button" id="seven" value="7"></td>
+                <td><input class="box2" type="button" id="eight" value="8"></td>
+                <td><input class="box2" type="button" id="nine" value="9"></td>
+                <td><input class="box3" type="button" id="plus" value="+"></td>
+            </tr>
+            <tr>
+                <td><input class="box2" type="button" id="result" value="="></td>
+                <td><input class="box2" type="button" id="zero" value="0"></td>
+                <td><input class="box2" type="button" id="dot" value="."></td>
+                <td><input class="box3" type="button" id="minus" value="-"></td>
+            </tr>
+        </form>
+        </table>
+    </div>
 </body>
 </html>
