@@ -11,7 +11,7 @@
             font-size: 26px;
             font-weight: bold;
         }
-        div {
+        table {
             text-align: center;
             width: 500px;
             height: 453px;
@@ -19,9 +19,7 @@
             background-color: #DDDDDD;
             border-radius: 10px;
         }
-        .box0 {
-            width: 492px;
-            height: 100px;
+        #display {
             color: #373737;
             background-color: #70C738;
             border: none;
@@ -29,7 +27,7 @@
             margin-bottom: 5px;
             font-size: 48px;
             text-align: right;
-            padding-right: 20px;
+            padding: 20px;
         }
         .box1 {
             width: 242px;
@@ -61,42 +59,42 @@
     </style>
 </head>
 <body>  
-    <div>
-        <table>
-        <form action="">
-            <tr>
-                <td colspan="4"><input class="box0" type="button" id="display" value="123+456"></td>
-            </tr>
-            <tr>
-                <td colspan="2"><input class="box1" type="button" id="backspace" value="BackSpace"></td>
-                <td colspan="2"><input class="box1" type="button" id="delete" value="C"></td>
-            </tr>
-            <tr>
-                <td><input class="box2" type="button" id="one" value="1"></td>
-                <td><input class="box2" type="button" id="two" value="2"></td>
-                <td><input class="box2" type="button" id="three" value="3"></td>
-                <td><input class="box3" type="button" id="divide" value="/"></td>
-            </tr>
-            <tr>
-                <td><input class="box2" type="button" id="four" value="4"></td>
-                <td><input class="box2" type="button" id="five" value="5"></td>
-                <td><input class="box2" type="button" id="six" value="6"></td>
-                <td><input class="box3" type="button" id="multifly" value="*"></td>
-            </tr>
-            <tr>
-                <td><input class="box2" type="button" id="seven" value="7"></td>
-                <td><input class="box2" type="button" id="eight" value="8"></td>
-                <td><input class="box2" type="button" id="nine" value="9"></td>
-                <td><input class="box3" type="button" id="plus" value="+"></td>
-            </tr>
-            <tr>
-                <td><input class="box2" type="button" id="result" value="="></td>
-                <td><input class="box2" type="button" id="zero" value="0"></td>
-                <td><input class="box2" type="button" id="dot" value="."></td>
-                <td><input class="box3" type="button" id="minus" value="-"></td>
-            </tr>
-        </form>
-        </table>
-    </div>
+    <table align="center">
+        <tr>
+            <td colspan="4">
+                <div style="width: 492px;">
+                    <div id="display" width="100%">123+456</div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><input class="box1" type="button" id="backspace" value="BackSpace"></td>
+            <td colspan="2"><input class="box1" type="button" id="delete" value="C"></td>
+        </tr>
+        <tr>
+            <td><input class="box2" type="button" id="one" value="1"></td>
+            <td><input class="box2" type="button" id="two" value="2"></td>
+            <td><input class="box2" type="button" id="three" value="3"></td>
+            <td><input class="box3" type="button" id="divide" value="/"></td>
+        </tr>
+        <tr>
+            <td><input class="box2" type="button" id="four" value="4"></td>
+            <td><input class="box2" type="button" id="five" value="5"></td>
+            <td><input class="box2" type="button" id="six" value="6"></td>
+            <td><input class="box3" type="button" id="multifly" value="*"></td>
+        </tr>
+        <tr>
+            <td><input class="box2" type="button" id="seven" value="7"></td>
+            <td><input class="box2" type="button" id="eight" value="8"></td>
+            <td><input class="box2" type="button" id="nine" value="9"></td>
+            <td><input class="box3" type="button" id="plus" value="+"></td>
+        </tr>
+        <tr>
+            <td><input class="box2" type="button" id="result" value="="></td>
+            <td><input class="box2" type="button" id="zero" value="0"></td>
+            <td><input class="box2" type="button" id="dot" value="."></td>
+            <td><input class="box3" type="button" id="minus" value="-"></td>
+        </tr>
+    </table>
 </body>
 </html>
